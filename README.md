@@ -1,4 +1,5 @@
 # Test-Agent
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/3e7a1418-4a41-487e-81ae-750d621909a1)
 
 <p>
     <a href="https://github.com/codefuse-ai/Test-Agent">
@@ -48,11 +49,15 @@
 TestGPT-7B模型核心能力的评测结果如下：
 - 多语言测试用例生成
 针对模型支持的三种语言：Java、Python、Javascript，Pass@1评测结果如下：
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/2115cdaf-9cad-466f-96b7-d742f56d1185)
 
 - 测试用例Assert补全
 目前模型支持Java用例的Assert补全，Pass@1评测结果如下：
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/dc4967ec-29d2-4a69-a42c-b7be91503956)
 
 ## 工程架构（Engineering Architecture）
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/105af447-1604-4c8a-9f78-8ebfe1f5fac3)
+
 大模型的号角已经吹响，测试领域大模型也在不断进化中，通过预训练过程中积累的丰富世界知识，在复杂交互环境中展现出了非凡的推理与决策能力。
 
 尽管在测试领域中基础模型取得了显著的成果，但仍然存在一些局限性，特定领域的测试任务通常需要专业化的工具或领域知识来解决。例如，基础模型可以通过预训练知识完成单次测试代码生成和测试文本生成等任务，但处理复杂的集成用例生成、特定领域用例生成和测试流程pipeline交互等问题时，需要更专业的工具和领域知识。
@@ -82,24 +87,24 @@ pip install -r requirements.txt
 项目提供了网页端快速搭建UI的能力能够更直观的展示模型交互和效果，我们可以使用简单的几个命令把前端页面唤醒并实时调用模型能力。在项目目录下，依次启动以下服务：
 
 1.**启动controller**
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/07de46ec-18f3-457b-814b-b1650b11345a)
 
 python3 -m chat.server.controller
 
 2.**启动模型worker**
 
 python3 -m chat.server.model_worker --model-path models/testgpt --device mps
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/b84ffc6e-be6f-47f6-8f84-b2360fe7b6bc)
 
 对于启动方式，可以按需选择以下几种配置选项：
 
 - --device mps 用于在Mac电脑上开启GPU加速的选项（Apple Silicon或AMD GPUs）；
 - --device xpu 用于在Intel XPU上开启加速的选项（Intel Data Center and Arc A-Series GPUs）；
-
-- - 需安装[Intel Extension for PyTorch](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/tutorials/installation.html)
+  - 需安装[Intel Extension for PyTorch](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/tutorials/installation.html)
   - 设置OneAPI环境变量：source /opt/intel/oneapi/setvars.sh
 
 - --device npu 用于在华为AI处理器上开启加速的选项；
-
-- - 需安装[Ascend PyTorch Adapter](https://github.com/Ascend/pytorch)
+  - 需安装[Ascend PyTorch Adapter](https://github.com/Ascend/pytorch)
   - 设置CANN环境变量：source /usr/local/Ascend/ascend-toolkit/set_env.sh
 
 - --device cpu 单独使用CPU运行的选项，不需要GPU；
@@ -108,6 +113,7 @@ python3 -m chat.server.model_worker --model-path models/testgpt --device mps
 3. **启动web服务**
 
 python3 -m chat.server.gradio_testgpt
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/cd7eefa2-a98d-47d2-ac61-04f4e029421b)
 
 待服务准备就绪后，我们可以打开本地启动的web服务地址 http://0.0.0.0:7860 ，就能看到完整的前端页面了。在页面下方包含了【单测生成】和【Assert补全】的两个例子，点击按钮后会自动生成一段样例文本到输入框中，点击Send按钮就会触发模型运行，之后耐心等待一段时间后（运行时间视本机性能而定）即可看到完整的回答了。
 
