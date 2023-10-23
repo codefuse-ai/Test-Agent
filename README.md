@@ -75,8 +75,8 @@ TestGPT-7B模型核心能力的评测结果如下：
 #### 环境安装
 
 ```plain
-git clone https://github.com/...
-cd TestGPT
+git clone https://github.com/codefuse-ai/Test-Agent
+cd Test-Agent
 pip install -r requirements.txt
 ```
 
