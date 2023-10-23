@@ -21,7 +21,7 @@
 ![M1](https://github.com/codefuse-ai/Test-Agent/assets/103973989/f2e3caab-206b-4eb9-8258-bf0ba8f8a31e)
 
 ### 魔搭体验效果
-![MS](https://github.com/codefuse-ai/Test-Agent/assets/103973989/21648f13-4b72-4729-90c6-deb5f310b55a)
+![MS](https://github.com/codefuse-ai/Test-Agent/assets/103973989/0e50b258-44f9-4dc6-8e30-0a01cf62d02b)
 
 
 ## 什么是Test Agent？（Introduction）
@@ -57,7 +57,7 @@ TestGPT-7B模型核心能力的评测结果如下：
 
 
 ## 工程架构（Engineering Architecture）
-![JG](https://github.com/codefuse-ai/Test-Agent/assets/103973989/3d10a40a-4ae4-4146-b4e8-af316d1bbc0f)
+![JG](https://github.com/codefuse-ai/Test-Agent/assets/103973989/1b61beff-df59-4ab3-843c-266413c8dbc4)
 
 大模型的号角已经吹响，测试领域大模型也在不断进化中，通过预训练过程中积累的丰富世界知识，在复杂交互环境中展现出了非凡的推理与决策能力。
 
