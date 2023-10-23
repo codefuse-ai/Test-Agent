@@ -1,5 +1,6 @@
 # Test-Agent: 您的智能测试助理
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/3e7a1418-4a41-487e-81ae-750d621909a1)
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/5737b652-1549-4242-bcb2-69e76603c5e6)
+
 
 <p>
     <a href="https://github.com/codefuse-ai/Test-Agent">
@@ -17,9 +18,11 @@
 </p>
 
 ### 本地Mac M1体验效果
-
+![M1](https://github.com/codefuse-ai/Test-Agent/assets/103973989/f2e3caab-206b-4eb9-8258-bf0ba8f8a31e)
 
 ### 魔搭体验效果
+![MS](https://github.com/codefuse-ai/Test-Agent/assets/103973989/21648f13-4b72-4729-90c6-deb5f310b55a)
+
 
 ## 什么是Test Agent？（Introduction）
 
@@ -45,14 +48,16 @@
 TestGPT-7B模型核心能力的评测结果如下：
 - 多语言测试用例生成
 针对模型支持的三种语言：Java、Python、Javascript，Pass@1评测结果如下：
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/2115cdaf-9cad-466f-96b7-d742f56d1185)
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/d0da4ec8-9756-43ed-84b2-778aff69ffc8)
+
 
 - 测试用例Assert补全
 目前模型支持Java用例的Assert补全，Pass@1评测结果如下：
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/dc4967ec-29d2-4a69-a42c-b7be91503956)
+![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/423e0843-b421-4e13-9e1f-e5d93cea9319)
+
 
 ## 工程架构（Engineering Architecture）
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/105af447-1604-4c8a-9f78-8ebfe1f5fac3)
+![JG](https://github.com/codefuse-ai/Test-Agent/assets/103973989/3d10a40a-4ae4-4146-b4e8-af316d1bbc0f)
 
 大模型的号角已经吹响，测试领域大模型也在不断进化中，通过预训练过程中积累的丰富世界知识，在复杂交互环境中展现出了非凡的推理与决策能力。
 
@@ -81,14 +86,12 @@ pip install -r requirements.txt
 项目提供了网页端快速搭建UI的能力能够更直观的展示模型交互和效果，我们可以使用简单的几个命令把前端页面唤醒并实时调用模型能力。在项目目录下，依次启动以下服务：
 
 1.**启动controller**
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/07de46ec-18f3-457b-814b-b1650b11345a)
-
+![controller](https://github.com/codefuse-ai/Test-Agent/assets/103973989/e68ce187-c9f1-4ce8-9d59-ff9d8348d0ac)
 python3 -m chat.server.controller
 
 2.**启动模型worker**
-
+![work](https://github.com/codefuse-ai/Test-Agent/assets/103973989/073e4e79-4005-4c98-87f7-0eaa0b2b1e22)
 python3 -m chat.server.model_worker --model-path models/testgpt --device mps
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/b84ffc6e-be6f-47f6-8f84-b2360fe7b6bc)
 
 对于启动方式，可以按需选择以下几种配置选项：
 - --device mps 用于在Mac电脑上开启GPU加速的选项（Apple Silicon或AMD GPUs）；
@@ -103,8 +106,9 @@ python3 -m chat.server.model_worker --model-path models/testgpt --device mps
 
 3. **启动web服务**
 python3 -m chat.server.gradio_testgpt
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/cd7eefa2-a98d-47d2-ac61-04f4e029421b)
+![web](https://github.com/codefuse-ai/Test-Agent/assets/103973989/340dae35-573b-4046-a3e8-e87a91453601)
 待服务准备就绪后，我们可以打开本地启动的web服务地址 http://0.0.0.0:7860 ，就能看到完整的前端页面了。在页面下方包含了【单测生成】和【Assert补全】的两个例子，点击按钮后会自动生成一段样例文本到输入框中，点击Send按钮就会触发模型运行，之后耐心等待一段时间后（运行时间视本机性能而定）即可看到完整的回答了。
+![demo](https://github.com/codefuse-ai/Test-Agent/assets/103973989/fd24274c-729b-4ce7-8763-a083b39300fb)
 
 ## 联系我们（Contact Us）
 
