@@ -110,7 +110,7 @@ python3 -m chat.server.gradio_testgpt
 待服务准备就绪后，我们可以打开本地启动的web服务地址 http://0.0.0.0:7860 ，就能看到完整的前端页面了。在页面下方包含了【单测生成】和【Assert补全】的两个例子，点击按钮后会自动生成一段样例文本到输入框中，点击Send按钮就会触发模型运行，之后耐心等待一段时间后（运行时间视本机性能而定）即可看到完整的回答了。
 ![demo](https://github.com/codefuse-ai/Test-Agent/assets/103973989/fd24274c-729b-4ce7-8763-a083b39300fb)
 
-## 联系我们（Contact Us）
-
+## 🤗 致谢
+本项目基于[FastChat](https://github.com/lm-sys/FastChat) 构建，在此深深感谢他们的开源贡献！
 
 
