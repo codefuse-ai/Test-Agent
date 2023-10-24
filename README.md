@@ -94,7 +94,9 @@ python3 -m chat.server.controller
 
 2.**启动模型worker**
 ![work](https://github.com/codefuse-ai/Test-Agent/assets/103973989/073e4e79-4005-4c98-87f7-0eaa0b2b1e22)
-python3 -m chat.server.model_worker --model-path models/testgpt --device mps
+python3 -m chat.server.model_worker --model-path models/TestGPT-7B --device mps
+
+（models/TestGPT-7B 为实际模型文件路径）
 
 对于启动方式，可以按需选择以下几种配置选项：
 - --device mps 用于在Mac电脑上开启GPU加速的选项（Apple Silicon或AMD GPUs）；
