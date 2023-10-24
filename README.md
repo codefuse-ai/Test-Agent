@@ -48,12 +48,21 @@
 TestGPT-7B模型核心能力的评测结果如下：
 - 多语言测试用例生成
 针对模型支持的三种语言：Java、Python、Javascript，Pass@1评测结果如下：
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/d0da4ec8-9756-43ed-84b2-778aff69ffc8)
+
+| Model | Java pass@1 | Java Average number of test scenarios | Python pass@1 | Python Average number of test scenarios | Javascript pass@1 | Javascript Average number of test scenarios |
+| --- | --- | --- | --- | --- | --- | --- |
+| TestGPT-7B | 48.6% | 4.37 | 35.67% | 3.56 | 36% | 2.76 |
+| CodeLlama-13B-Instruct | 40.54% | 1.08 | 30.57% | 1.65 | 31.7% | 3.13 |
+| Qwen-14B-Chat | 10.81% | 2.78 | 15.9% | 1.32 | 9.15% | 4.22 |
+| Baichuan2-13B-Chat | 13.5% | 2.24 | 12.7% | 2.12 | 6.1% | 3.31 |
 
 
 - 测试用例Assert补全
 目前模型支持Java用例的Assert补全，Pass@1评测结果如下：
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/423e0843-b421-4e13-9e1f-e5d93cea9319)
+
+| Model | pass@1 | Percentage of strong validation |
+| --- | --- | --- |
+| Codefuse-TestGPT-7B | 71.1% | 100% |
 
 
 ## 工程架构（Engineering Architecture）
@@ -72,7 +81,7 @@ TestGPT-7B模型核心能力的评测结果如下：
 
 您可在[modelscope](https://modelscope.cn/models/codefuse-ai/TestGPT-7B)或[huggingface](https://huggingface.co/codefuse-ai/TestGPT-7B)上获取到模型的详细信息并下载模型文件。
 需要注意的是：
-1）如果您通过modelscope下载模型，下载方式可参考：[下载说明](https://www.modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%8B%E8%BD%BD#%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B)
+1）如果您通过modelscope下载模型，下载方式可参考：[下载说明](https://www.modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%8B%E8%BD%BD#%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B)；
 2）如果您通过huggingface下载模型，请确保您可以正常访问huggingface。
 
 #### 环境安装
