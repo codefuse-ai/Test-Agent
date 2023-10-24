@@ -18,7 +18,7 @@
 </p>
 
 ### 本地Mac M1体验效果
-![M1](https://github.com/codefuse-ai/Test-Agent/assets/103973989/f2e3caab-206b-4eb9-8258-bf0ba8f8a31e)
+![图片](https://github.com/codefuse-ai/Test-Agent/assets/103973989/8dba860f-c1bb-49d5-b9dd-a58e541562a6)
 
 ### 魔搭体验效果
 ![MS](https://github.com/codefuse-ai/Test-Agent/assets/103973989/0e50b258-44f9-4dc6-8e30-0a01cf62d02b)
