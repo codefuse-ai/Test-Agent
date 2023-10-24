@@ -71,6 +71,9 @@ TestGPT-7B模型核心能力的评测结果如下：
 #### 模型下载
 
 您可在[modelscope](https://modelscope.cn/models/codefuse-ai/TestGPT-7B)或[huggingface](https://huggingface.co/codefuse-ai/TestGPT-7B)上获取到模型的详细信息并下载模型文件。
+需要注意的是：
+1）如果您通过modelscope下载模型，下载方式可参考：[下载说明](https://www.modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%8B%E8%BD%BD#%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B)
+2）如果您通过huggingface下载模型，请确保您可以正常访问huggingface。
 
 #### 环境安装
 
