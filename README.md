@@ -21,6 +21,7 @@
 ![图片](https://github.com/codefuse-ai/Test-Agent/assets/103973989/8dba860f-c1bb-49d5-b9dd-a58e541562a6)
 
 ### 魔搭体验效果
+魔搭模型访问链接：![ModelScope TestGPT-7B](https://modelscope.cn/models/codefuse-ai/TestGPT-7B/summary)
 ![MS](https://github.com/codefuse-ai/Test-Agent/assets/103973989/0e50b258-44f9-4dc6-8e30-0a01cf62d02b)
 
 
