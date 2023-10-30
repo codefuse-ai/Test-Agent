@@ -1,6 +1,7 @@
 # Test-Agent: 您的智能测试助理
-![image](https://github.com/codefuse-ai/Test-Agent/assets/103973989/5737b652-1549-4242-bcb2-69e76603c5e6)
-
+<p align="center">
+  <img src="https://github.com/codefuse-ai/MFTCoder/blob/main/assets/github-codefuse-logo-update.jpg" width="50%" />
+</p>
 
 <p>
     <a href="https://github.com/codefuse-ai/Test-Agent">
