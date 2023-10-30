@@ -3,7 +3,7 @@
   <img src="https://github.com/codefuse-ai/MFTCoder/blob/main/assets/github-codefuse-logo-update.jpg" width="50%" />
 </p>
 
-<p>
+<p align="center">
     <a href="https://github.com/codefuse-ai/Test-Agent">
         <img alt="stars" src="https://img.shields.io/github/stars/codefuse-ai/Test-Agent?style=social" />
     </a>
