@@ -134,7 +134,7 @@ python3 -m chat.server.gradio_testgpt
 
 ## 联系我们
 
-![weixin](https://github.com/codefuse-ai/Test-Agent/assets/106229399/bacee8aa-c720-4500-920d-99f5c86e6ada)
+![weixin](https://github.com/codefuse-ai/Test-Agent/assets/106229399/a2661c92-b98d-49aa-9074-5b5f9b796156)
 
 
 
